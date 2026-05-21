@@ -1,0 +1,14 @@
+.feedbackList p {
+  margin: 6px 0;
+  font-size: 16px;
+}
+
+.total {
+  font-weight: bold;
+  margin-top: 12px !important;
+}
+
+.positive {
+  color: #2e7d32;
+  font-weight: bold;
+}
