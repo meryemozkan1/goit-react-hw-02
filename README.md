@@ -1,16 +1,26 @@
-# React + Vite
+# GoIT React Homework #2 - Sip Happens Café
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is the second homework assignment within the GoIT React Developer program. It builds a customer feedback collection widget for "Sip Happens Café" utilizing React state management, effects, local storage persistence, and modular component structures.
 
-Currently, two official plugins are available:
+## 🚀 Live Demo
+- [View Live Application on Vercel](https://goit-react-hw-02-iota-topaz-60.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Components & Features Included
+1. **Description (`<Description>`):** Renders the café title and welcoming instructions.
+2. **Options (`<Options>`):** Provides interactive feedback buttons (`Good`, `Neutral`, `Bad`) along with a conditionally rendered `Reset` button.
+3. **Feedback (`<Feedback>`):** Displays detailed statistics including individual counts, total feedback, and positive feedback percentage.
+4. **Notification (`<Notification>`):** Displays an empty state message when no feedback has been submitted yet.
+5. **Local Storage Persistence:** Synchronizes feedback state with `localStorage` via `useEffect` to ensure statistics are preserved across page reloads.
 
-## React Compiler
+## 📂 Project Structure
+- `src/components/Description/` — Description component & CSS module
+- `src/components/Options/` — Options component & CSS module
+- `src/components/Feedback/` — Feedback component & CSS module
+- `src/components/Notification/` — Notification component & CSS module
+- `src/App.jsx` — Root component managing state and local storage logic
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Technologies & Tools Used
+- **React (v18+):** Functional components, `useState`, and `useEffect` hooks.
+- **Bundler:** Vite.
+- **Styling:** CSS Modules for scoped styling.
+- **Deployment:** Vercel.
